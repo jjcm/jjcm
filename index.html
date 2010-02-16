@@ -1,0 +1,441 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link rel="stylesheet" href="reset.css" type="text/css"> 
+<script type="text/javascript" src="jquery-1.4.1.min.js"></script>
+<style type="text/css">
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #1a1817;
+        width: 100%;
+        font-family: 'Tahoma', 'Arial', sans-serif;
+    }
+    #content{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+    .category{
+        background: url('category_bg.png') repeat;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .background{
+        width: 1200px;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .label{
+        background: url('label_bg.png') repeat-y;
+        width: 178px;
+        height: 100%;
+        position: relative;
+        margin-bottom: 15px;
+        overflow: hidden;
+        float: left;
+        clear: none;
+    }
+    .label .top{
+        background: url('label_top.png') no-repeat;
+        width: 178px;
+        height: 223px;
+        position: absolute;
+        top: 0px;
+    }
+    .label .bot{
+        background: url('label_bot.png') no-repeat;
+        width: 178px;
+        height: 15px;
+        position: absolute;
+        bottom: 0px;
+        overflow: hidden;
+    }
+    .content{
+        background: url('content_bg.png') repeat;
+        width: 860px;
+        height: 100%;
+        position: relative;
+        margin-bottom: 15px;
+        overflow: hidden;
+        float: left;
+    }
+    .content .top{
+        background: url('content_top.png') repeat-x;
+        width: 100%;
+        height: 223px;
+        position: absolute;
+        top: 0px;
+    }
+    .content .bot{
+        background: url('content_bot.png') repeat-x;
+        width: 100%;
+        height: 7px;
+        position: absolute;
+        bottom: 0px;
+        overflow: hidden;
+    }
+    .container{
+        width: 840px;
+        margin: 10px;
+        padding: 10px 10px 10px 170px;
+     }
+     .example{
+        background: url('example_bg.png') repeat-x;
+         width: 760px;
+         height: 72px;
+         position: relative;
+         padding-bottom: 10px;
+         _overflow: hidden;
+     }
+     .image{
+         overflow: hidden;
+         height: 100%;
+         width: 100%;
+         position: relative;
+     }
+     .image .gloss{
+         height: 50%;
+         width: 100%;
+         background-color: #fff;
+         opacity: .1;
+         filter: alpha(opacity = 10);
+         position: absolute;
+         top: 0px;
+     }
+     .image .shade{
+         height: 50%;
+         width: 100%;
+         background-color: #000;
+         opacity: .1;
+         filter: alpha(opacity = 10);
+         position: absolute;
+         bottom: 0px;
+     }
+     .imageShadow{
+         -moz-box-shadow: 0px 0px 10px #000;
+         -webkit-box-shadow: 0px 0px 10px #000;
+         box-shadow: 0px 0px 10px #000;
+     }
+     .imageShadowContrast{
+         -moz-box-shadow: -1px -1px 2px #fff;
+         -webkit-box-shadow: -1px -1px 2px #fff;
+         box-shadow: -1px -1px 2px #fff;
+     }
+     h2.catlabel{
+         position: absolute;
+         top: 19px;
+         right: 70px;
+         color: #fff;
+         z-index: 10;
+         font-family: 'Tahoma', 'Arial', sans-serif;
+         font-weight: normal;
+         font-size: 18pt;
+         text-shadow: 0px 0px 5px #000;
+     }
+
+     #titlebar{
+        background: #bbb5a6 url('titlebar_bg.png') repeat-x;
+         height: 29px;
+         width: 100%;
+         margin: 4px 0px 16px 0px;
+         position: relative;
+     }
+     #jjcm{
+         float: left;
+         padding-left: 11px;
+         padding-top: 4px;
+         font-size: 18px;
+         font-family: 'Tahoma', 'Arial', sans-serif;
+         text-shadow: 0px 0px 5px #fff;
+     }
+     #jjcm #black{
+         float:left;
+         color: #1a1917;
+     }
+     #jjcm #red{
+         float:left;
+         color: #5e0f1a;
+     }
+     #jjcm a{
+         text-decoration: none;
+     }
+     #navigation{
+         position: absolute;
+         bottom: 9px;
+         left: 145px;
+     }
+     #navigation a {
+         font-size: 12px;
+         font-style: italic;
+         color: #45423d;
+         padding-left: 30px;
+     }
+     .description{
+         color: #fff;
+         font-size: 10px;
+         font-style: italic;
+         letter-spacing: 1px;
+         line-height: 130%;
+         opacity: .7;
+         width: 110px;
+         position: absolute;
+         top: 55px;
+         left: -170px;
+         display: none;
+     }
+
+
+         
+
+
+</style>
+</head>
+<body>
+<div id="titlebar">
+    <div id="jjcm">
+        <a href="http://jjcm.org">
+            <div id="black">jjc</div><div id="red">m</div>
+        </a>
+    </div>
+    <nobr id="navigation">
+        <a>services</a>
+        <a>blog</a>
+        <a>contact</a>
+    </nobr>
+</div>
+<div id="content">
+    <div class="category">
+        <div class="background">
+            <div class="label">
+                <h2 class="catlabel">web</h2>
+                <div class="top">
+                </div>
+                <div class="bot">
+                </div>
+            </div>
+            <div class="content">
+                <div class="top">
+                </div>
+                <div class="bot">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="example">
+                <div class="description">
+                    <hr>
+                    <strong>Division Seven Consulting</strong><br/>
+                    Logo and base web design for Division Seven Consulting - a corporate consultation firm based in Hawai'i.
+               </div>
+                <div class="imageShadowContrast">
+                    <div class="image imageShadow">
+                        <div class="imageOffset" style="position: relative;">
+                            <img class ="img" style="position: relative; top: -7px;" src="d7.jpg"/>
+                        </div>
+                        <div class="overlay">
+                            <div class="gloss"> </div>
+                            <div class="shade"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="description">
+                    <hr>
+                    <strong>Saving Other Species</strong><br/>
+                    An animal volunteer/rescue services site that attempts to match willing volunteers with organizations that best suit them.
+
+               </div>
+                <div class="imageShadowContrast">
+                    <div class="image imageShadow">
+                        <div class="imageOffset" style="position: relative;">
+                            <img class="img" style="position: relative; top: -10px;" src="sos.jpg"/>
+                        </div>
+                        <div class="overlay">
+                            <div class="gloss"> </div>
+                            <div class="shade"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <div class="background">
+            <div class="label">
+                <h2 class="catlabel">print</h2>
+                <div class="top">
+                </div>
+                <div class="bot">
+                </div>
+            </div>
+            <div class="content">
+                <div class="top">
+                </div>
+                <div class="bot">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="example">
+                <div class="description">
+                    <hr>
+                    <strong>ASLMU Christmas Cards</strong><br/>
+                    Basic glossy handout given to students of Loyola Marymount University to celebrate the holidays.
+
+               </div>
+                <div class="imageShadowContrast">
+                    <div class="image imageShadow">
+                        <div class="imageOffset" style="position: relative;">
+                            <img class ="img" style="position: relative; top: -300px;" src="glossy.jpg"/>
+                        </div>
+                        <div class="overlay">
+                            <div class="gloss"> </div>
+                            <div class="shade"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="description">
+                    <hr>
+                    <strong>Hawai'i Pacific University</strong><br/>
+                    Brand proposal for Hawaii Pacific University. Logo, letterhead, and design guidelines included.
+               </div>
+                <div class="imageShadowContrast">
+                    <div class="image imageShadow">
+                        <div class="imageOffset" style="position: relative;">
+                            <img class="img" style="position: relative; top: -300px;" src="hpu.jpg"/>
+                        </div>
+                        <div class="overlay">
+                            <div class="gloss"> </div>
+                            <div class="shade"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="description">
+                    <hr>
+                    <strong>Homework</strong><br/>
+                    Personal artwork. Photoshop CS4 + Wacom Intuos4.
+               </div>
+                <div class="imageShadowContrast">
+                    <div class="image imageShadow">
+                        <div class="imageOffset" style="position: relative;">
+                            <img class="img" style="position: relative; top: -580px;" src="homework.jpg"/>
+                        </div>
+                        <div class="overlay">
+                            <div class="gloss"> </div>
+                            <div class="shade"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <div class="background">
+            <div class="label">
+                <h2 class="catlabel">logo</h2>
+                <div class="top">
+                </div>
+                <div class="bot">
+                </div>
+            </div>
+            <div class="content">
+                <div class="top">
+                </div>
+                <div class="bot">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="example">
+                <div class="description">
+                    <hr>
+                    <strong>Fanatic Paintball</strong><br/>
+                    Logo for a competitive paintball team based in Los Angeles.
+               </div>
+                <div class="imageShadowContrast">
+                    <div class="image imageShadow">
+                        <div class="imageOffset" style="position: relative;">
+                            <img class ="img" style="position: relative; top: -165px;" src="fanatic.jpg"/>
+                        </div>
+                        <div class="overlay">
+                            <div class="gloss"> </div>
+                            <div class="shade"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="description">
+                    <hr>
+                    <strong>Public Relations</strong><br/>
+                    Logo for a public relations board.
+
+               </div>
+                <div class="imageShadowContrast">
+                    <div class="image imageShadow">
+                        <div class="imageOffset" style="position: relative;">
+                            <img class ="img" style="position: relative; top: -360px;" src="pr.jpg"/>
+                        </div>
+                        <div class="overlay">
+                            <div class="gloss"> </div>
+                            <div class="shade"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="description">
+                    <hr>
+                    <strong>Boardriders</strong><br/>
+                    Logo for a surfing club and periodical.
+
+               </div>
+                <div class="imageShadowContrast">
+                    <div class="image imageShadow">
+                        <div class="imageOffset" style="position: relative;">
+                            <img class="img" style="position: relative; top: -200px;" src="boardriders.jpg"/>
+                        </div>
+                        <div class="overlay">
+                            <div class="gloss"> </div>
+                            <div class="shade"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(".example").toggle(
+        function(){
+            img = $(this).find(".img");
+            img_height = img.attr("height");
+            $(this).animate({height: img_height}); 
+            //offset the image by the proper height. Do this so we can hold this variable;
+            $(this).find(".imageOffset").animate({top: img.css("top").replace('-','')});
+            $(this).find(".overlay").animate({opacity: 0.25});
+            desc = $(this).find(".description");
+            desc.fadeIn(1000);
+        }, 
+        function(){
+            var parentDiv = $(this);
+            $(this).find(".description").fadeOut(250, function(){closePreview(parentDiv)}
+            );
+        }
+    );
+    function closePreview(parentDiv){
+        parentDiv.animate({height: '72px'});
+        parentDiv.find(".imageOffset").animate({top: '0px'});
+        parentDiv.find(".overlay").animate({opacity: 1});
+    }
+
+</script>
