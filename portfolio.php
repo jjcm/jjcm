@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Blank
+Template Name: Portfolio
 */
 ?>
 <?php get_header(); ?>
@@ -31,7 +31,7 @@ Template Name: Blank
                 <div class="imageShadowContrast">
                     <div class="image imageShadow">
                         <div class="imageOffset" style="position: relative;">
-                            <img class ="img" style="position: relative; top: -7px;" src="d7.jpg"/>
+                        <img class ="img" style="position: relative; top: -7px;" src="<?php bloginfo('template_directory');?>/images/d7.jpg"/>
                         </div>
                         <div class="overlay">
                             <div class="gloss"> </div>
@@ -50,7 +50,7 @@ Template Name: Blank
                 <div class="imageShadowContrast">
                     <div class="image imageShadow">
                         <div class="imageOffset" style="position: relative;">
-                            <img class="img" style="position: relative; top: -10px;" src="sos.jpg"/>
+                            <img class="img" style="position: relative; top: -10px;" src="<?php bloginfo('template_directory');?>/images/sos.jpg"/>
                         </div>
                         <div class="overlay">
                             <div class="gloss"> </div>
@@ -88,7 +88,7 @@ Template Name: Blank
                 <div class="imageShadowContrast">
                     <div class="image imageShadow">
                         <div class="imageOffset" style="position: relative;">
-                            <img class ="img" style="position: relative; top: -300px;" src="glossy.jpg"/>
+                            <img class ="img" style="position: relative; top: -300px;" src="<?php bloginfo('template_directory');?>/images/glossy.jpg"/>
                         </div>
                         <div class="overlay">
                             <div class="gloss"> </div>
@@ -106,7 +106,7 @@ Template Name: Blank
                 <div class="imageShadowContrast">
                     <div class="image imageShadow">
                         <div class="imageOffset" style="position: relative;">
-                            <img class="img" style="position: relative; top: -300px;" src="hpu.jpg"/>
+                            <img class="img" style="position: relative; top: -300px;" src="<?php bloginfo('template_directory');?>/images/hpu.jpg"/>
                         </div>
                         <div class="overlay">
                             <div class="gloss"> </div>
@@ -124,7 +124,7 @@ Template Name: Blank
                 <div class="imageShadowContrast">
                     <div class="image imageShadow">
                         <div class="imageOffset" style="position: relative;">
-                            <img class="img" style="position: relative; top: -580px;" src="homework.jpg"/>
+                            <img class="img" style="position: relative; top: -580px;" src="<?php bloginfo('template_directory');?>/images/homework.jpg"/>
                         </div>
                         <div class="overlay">
                             <div class="gloss"> </div>
@@ -161,7 +161,7 @@ Template Name: Blank
                 <div class="imageShadowContrast">
                     <div class="image imageShadow">
                         <div class="imageOffset" style="position: relative;">
-                            <img class ="img" style="position: relative; top: -165px;" src="fanatic.jpg"/>
+                            <img class ="img" style="position: relative; top: -165px;" src="<?php bloginfo('template_directory');?>/images/fanatic.jpg"/>
                         </div>
                         <div class="overlay">
                             <div class="gloss"> </div>
@@ -180,7 +180,7 @@ Template Name: Blank
                 <div class="imageShadowContrast">
                     <div class="image imageShadow">
                         <div class="imageOffset" style="position: relative;">
-                            <img class ="img" style="position: relative; top: -360px;" src="pr.jpg"/>
+                            <img class ="img" style="position: relative; top: -360px;" src="<?php bloginfo('template_directory');?>/images/pr.jpg"/>
                         </div>
                         <div class="overlay">
                             <div class="gloss"> </div>
@@ -199,7 +199,7 @@ Template Name: Blank
                 <div class="imageShadowContrast">
                     <div class="image imageShadow">
                         <div class="imageOffset" style="position: relative;">
-                            <img class="img" style="position: relative; top: -200px;" src="boardriders.jpg"/>
+                            <img class="img" style="position: relative; top: -200px;" src="<?php bloginfo('template_directory');?>/images/boardriders.jpg"/>
                         </div>
                         <div class="overlay">
                             <div class="gloss"> </div>
