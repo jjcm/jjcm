@@ -1,38 +1,21 @@
-<hr class="hide" />
-<style type="text/css">
-#footer {
-}
-</style>
-<div id="footer"> 
-  <div class="inside"> 
-    <ul>
-        <li>
-            <a href="portfolio.php">Portfolio</a>
-        </li>
-        <li>
-            <a href="statement.php">Artist's Statement</a>
-        </li>
-        <li>
-            <a href="mailto:jenerubin@gmail.com">Contact</a>
-        </li>
-        <li>
-            <a href="blog.php">Blog</a>
-        </li>
-    </ul>
-  </div>
-</div>
-<!-- [END] #footer -->
-<div id="live-search"> 
-  <div class="inside"> 
-    <div id="search"> 
-      <form method="get" id="sform" action="<?php bloginfo('home'); ?>/">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/search.gif" alt="Search:" /> 
-        <input type="text" id="q" value="<?php echo wp_specialchars($s, 1); ?>" name="s" size="15" />
-      </form>
-    </div>
-  </div>
-</div>
-<!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-13057743-1");
+    pageTracker._setDomainName(".jjcm.org");
+    pageTracker._trackPageview();
+} catch(err) {}
+
+var presence = false;
+$('#presence').click(function(){
+    $('.mainlinks').animate({opacity: presence ? 1 : 0});
+    $('.subnav').animate({width: presence ? 0 : 410}); 
+    presence = !presence;
+});
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

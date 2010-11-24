@@ -17,18 +17,34 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_head(); ?>
 <script type="text/javascript" src="<?php bloginfo('template_directory');?>/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/jquery.scrollTo-min.js"></script>
 </head>
-<body>
-<div id="titlebar">
-    <div id="jjcm">
+<body style="background-color: #1a1817;"> <!--load the bg color here so there's not a white flash while the css loads. Inline bg colors... the curse of a dark themed site --!>
+<div id="header">
+    <div class="content">
         <a href="http://jjcm.org">
-            <div id="black">jjc</div><div id="red">m</div>
+            <h1><span>jjcm</span></h1>
         </a>
+        <ul class="nav">
+            <div style="float: left;" class="mainlinks">
+                <li><a href="mailto:j+site@jjcm.org">contact</a></li>
+                <li><a href="http://englishhard.com/">blog</a></li>
+                <li><a href="#print" onclick="$.scrollTo('#cat_print', 400);">print design</a></li>
+                <li><a href="#web" onclick="$.scrollTo('#cat_web', 400);">web design</a></li>
+                <li><a href="#logo" onclick="$.scrollTo('#cat_logo', 400);">logo design</a></li>
+            </div>
+            <li><a id="presence" href="#">&lt; presence</a>
+                <ul class="subnav">
+                    <div class="altlinks">
+                        <li><a href="http://facebook.com/pwnies">facebook</a></li>
+                        <li><a href="http://pwnies.deviantart.com">deviantArt</a></li>
+                        <li><a href="http://news.ycombinator.com/user?id=jjcm">Hacker News</a></li>
+                        <li><a href="http://slashdot.org/~pwnies/">/.</a></li>
+                        <li><a href="https://github.com/pwnies">github</a></li>
+                    </div>
+                </ul>
+
+            </li>
     </div>
-    <nobr id="navigation">
-        <a>services</a>
-        <a>blog</a>
-        <a>contact</a>
-    </nobr>
 </div>
 <!-- [END] #header -->

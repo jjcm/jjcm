@@ -4,17 +4,33 @@ body {
     background-color: #1a1817;
     width: 100%;
     font-family: 'Tahoma', 'Arial', sans-serif;
+    background: url('images/header_bg.jpg') repeat;
 }
-#content{
+#header{ background: url('images/header_bg.jpg') repeat-x; height: 84px; width: 100%; color: #fff; position: relative;}
+    #header .content{ background: url('images/header.jpg') no-repeat; width: 1024px; height: 98px; margin-left: auto; margin-right: auto; position: relative;}
+    #header .content h1{ background: url('images/logo.jpg') no-repeat; width: 92px; height: 44px; position: absolute; top: 10px; left: 120px;}
+    #header .content h1 span{ display: none; }
+    #header .content .nav { position: absolute; top: 13px; left: 225px;}
+    #header .content ul li { float: left; }
+    #header .content ul li .subnav{ position: absolute; top: 0px; right: 90px; width: 0px; height: 20px; overflow: hidden;}
+    #header .content ul li .subnav .altlinks{ width: 420px; }
+    #header .content ul li a{ color: #fff; font-size: 7pt; letter-spacing: 1px; text-decoration: none; padding: 0px 20px; text-shadow: 0px 1px 5px #000;}
+#main{
     position: relative;
     overflow: hidden;
     width: 100%;
+    
 }
 .category{
     background: url('images/category_bg.png') repeat;
-    width: 100%;
+    width: 1024px;
     height: auto;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-box-shadow: 0px 0px 5px #111;
+    -webkit-box-shadow: 0px 0px 5px #111;
+    box-shadow: 0px 0px 5px #111;
 }
 .background{
     width: 1200px;
@@ -48,23 +64,24 @@ body {
     bottom: 0px;
     overflow: hidden;
 }
-.content{
+.background .content{
     background: url('images/content_bg.png') repeat;
-    width: 860px;
+    width: 846px;
+    _width: 860px;
     height: 100%;
     position: relative;
     margin-bottom: 15px;
     overflow: hidden;
     float: left;
 }
-.content .top{
+.background .content .top{
     background: url('images/content_top.png') repeat-x;
     width: 100%;
     height: 223px;
     position: absolute;
     top: 0px;
 }
-.content .bot{
+.background .content .bot{
     background: url('images/content_bot.png') repeat-x;
     width: 100%;
     height: 7px;
@@ -78,7 +95,6 @@ body {
     padding: 10px 10px 10px 170px;
     }
     .example{
-    background: url('images/example_bg.png') repeat-x;
         width: 760px;
         height: 72px;
         position: relative;
@@ -182,8 +198,12 @@ body {
         left: -170px;
         display: none;
     }
+    .description a{
+        color: #fff;
+        font-weight: bold;
+    }
 
 
         
 
-
+.inside p, .inside img { margin-left: auto; margin-right: auto; color: #fff; padding: 10px; }
