@@ -1,0 +1,33 @@
+<svg width="22" height="22" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="linen-outer"><rect width="15" height="15" rx="1.6" /></clipPath>
+    <clipPath id="linen-inner"><rect x="0.9" y="0.9" width="13.2" height="13.2" rx="0.9" /></clipPath>
+    <radialGradient id="linen-glow" cx="7.5" cy="6.5" r="7.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.14" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <g clip-path="url(#linen-outer)">
+    <rect width="5" height="5" fill="#DBD49A" />
+    <rect x="5" width="5" height="5" fill="#AEC598" />
+    <rect x="10" width="5" height="5" fill="#3C893E" />
+    <rect y="5" width="5" height="5" fill="#C87D00" />
+    <rect x="5" y="5" width="5" height="5" fill="#DEB612" />
+    <rect x="10" y="5" width="5" height="5" fill="#2C6441" />
+    <rect y="10" width="5" height="5" fill="#601101" />
+    <rect x="5" y="10" width="5" height="5" fill="#961B00" />
+    <rect x="10" y="10" width="5" height="5" fill="#EDD857" />
+    <g clip-path="url(#linen-inner)">
+      <rect width="5" height="5" fill="#B3A865" />
+      <rect x="5" width="5" height="5" fill="#7A8E59" />
+      <rect x="10" width="5" height="5" fill="#275F23" />
+      <rect y="5" width="5" height="5" fill="#954F00" />
+      <rect x="5" y="5" width="5" height="5" fill="#DEB612" />
+      <rect x="10" y="5" width="5" height="5" fill="#1A3E23" />
+      <rect y="10" width="5" height="5" fill="#400A00" />
+      <rect x="5" y="10" width="5" height="5" fill="#661000" />
+      <rect x="10" y="10" width="5" height="5" fill="#C6A736" />
+    </g>
+    <rect width="15" height="15" fill="url(#linen-glow)" />
+  </g>
+</svg>
